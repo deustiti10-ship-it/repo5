@@ -1,0 +1,33 @@
+:root{--bg:#fff8f0;--fg:#2b1d12;--accent:#d9480f;--card:#fff;--line:#ecd9c6}
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,Segoe UI,Arial,sans-serif;background:var(--bg);color:var(--fg)}
+header{background:var(--accent);color:#fff;padding:14px 24px}
+header h1{margin:0;font-size:1.4rem}
+main{max-width:1000px;margin:24px auto;padding:0 16px}
+main.angosto{max-width:520px}
+.barra{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:16px}
+.filtros a{padding:6px 14px;border-radius:20px;text-decoration:none;color:var(--fg);border:1px solid var(--line);margin-right:6px;background:var(--card)}
+.filtros a.on{background:var(--fg);color:#fff;border-color:var(--fg)}
+.btn{background:var(--accent);color:#fff;border:0;padding:10px 18px;border-radius:8px;text-decoration:none;cursor:pointer;font-size:1rem;display:inline-block}
+.btn.sec{background:#8a7a6a}
+.tabla-wrap{overflow-x:auto;background:var(--card);border:1px solid var(--line);border-radius:10px}
+table{width:100%;border-collapse:collapse}
+th,td{padding:10px 12px;text-align:left;border-bottom:1px solid var(--line);vertical-align:middle}
+th{background:#fdeedd;font-size:.85rem;text-transform:uppercase;letter-spacing:.03em}
+td small{color:#8a7a6a}
+.vacio{text-align:center;color:#8a7a6a;padding:30px}
+.badge{padding:3px 10px;border-radius:12px;font-size:.85rem;font-weight:600}
+.badge.preparando{background:#fff3bf;color:#8a6d00}
+.badge.despachado{background:#d3f9d8;color:#2b8a3e}
+.acciones{white-space:nowrap}
+.acciones form{display:inline}
+.mini{font-size:.82rem;padding:5px 9px;border-radius:6px;border:1px solid var(--line);background:#fff;color:var(--fg);cursor:pointer;text-decoration:none;display:inline-block}
+.mini.peligro{color:#c92a2a;border-color:#f3b0b0}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:20px}
+label{display:block;margin-bottom:14px;font-weight:600}
+input[type=text],input[type=number],select{width:100%;padding:9px;border:1px solid var(--line);border-radius:6px;font-size:1rem;margin-top:5px}
+fieldset{border:1px solid var(--line);border-radius:8px;margin:0 0 16px}
+.fila{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.fila input{width:90px;margin:0}
+.botones{display:flex;gap:10px}
+.error{background:#ffe3e3;color:#c92a2a;padding:10px 14px;border-radius:8px;margin-bottom:12px}
